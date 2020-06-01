@@ -98,22 +98,30 @@
 						<configuration>
 							<inputSpec>http://petstore.swagger.io/v2/swagger.json</inputSpec>
 							<language>java</language>
+							<configOptions>
+								<dateLibrary>java8</dateLibrary>
+								<sourceFolder>src/main/java</sourceFolder>
+								<hideGenerationTimestamp>true</hideGenerationTimestamp>
+							</configOptions>
+
 							<library>resttemplate</library>
 							<output>${project.basedir}</output>
 
 							<modelPackage>${default.package}.dto</modelPackage>
+							<modelNameSuffix>DTO</modelNameSuffix>
+							<generateModels>true</generateModels>
 							<generateApiTests>false</generateApiTests>
 							<generateApiDocumentation>false</generateApiDocumentation>
 
-							<apiPackage>${default.package}.controller</apiPackage>
+							<apiPackage>${default.package}.restclient</apiPackage>
+							<generateApis>true</generateApis>
 							<generateModelTests>false</generateModelTests>
 							<generateModelDocumentation>false</generateModelDocumentation>
 
-							<invokerPackage>com.example.demo.restclient</invokerPackage>
-							<configOptions>
-								<dateLibrary>java8</dateLibrary>
-								<sourceFolder>restclient</sourceFolder>
-							</configOptions>
+							<generateSupportingFiles>false</generateSupportingFiles>
+
+							<invokerPackage>${default.package}.restclient.utils</invokerPackage>
+							<generateSupportingFiles>true</generateSupportingFiles>
 						</configuration>
 					</execution>
 				</executions>
