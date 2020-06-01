@@ -132,8 +132,7 @@
 
 							<generateSupportingFiles>false</generateSupportingFiles>
 
-							<invokerPackage>${default.package}.restclient.utils</invokerPackage>
-							<generateSupportingFiles>true</generateSupportingFiles>
+							<generateSupportingFiles>false</generateSupportingFiles>
 						</configuration>
 					</execution>
 				</executions>
