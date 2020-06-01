@@ -84,6 +84,11 @@
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
         </dependency>
+		<dependency>
+			<groupId>io.github.openfeign</groupId>
+			<artifactId>feign-core</artifactId>
+			<version>10.10.1</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -93,7 +98,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
-<!--			<inputSpec>http://petstore.swagger.io/v2/swagger.json</inputSpec>-->
 			<plugin>
 				<groupId>io.swagger</groupId>
 				<artifactId>swagger-codegen-maven-plugin</artifactId>
