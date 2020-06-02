@@ -124,6 +124,7 @@
 								<dateLibrary>java8</dateLibrary>
 								<sourceFolder>src/main/java</sourceFolder>
 								<hideGenerationTimestamp>true</hideGenerationTimestamp>
+								<serializableModel>true</serializableModel>
 							</configOptions>
 
 							<library>spring-cloud</library>
