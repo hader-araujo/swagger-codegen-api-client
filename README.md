@@ -1,6 +1,6 @@
 # Generating API Client using swagger-codegen-maven-plugin
 
-This repository contains an example of using swagger-codegen-maven-plugin to generate the [FeignClient](https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-feign.html)
+This repository contains an example of using swagger-codegen-maven-plugin to generate the [FeignClient](https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-feign.html).
 
 Overview
 ============================
