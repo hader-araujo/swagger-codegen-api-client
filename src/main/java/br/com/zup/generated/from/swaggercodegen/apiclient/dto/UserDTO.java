@@ -14,8 +14,7 @@ import javax.validation.constraints.*;
  * UserDTO
  */
 @Validated
-
-public class UserDTO  implements Serializable {
+public class UserDTO  implements Serializable  {
   private static final long serialVersionUID = 1L;
 
   @JsonProperty("id")
@@ -52,9 +51,8 @@ public class UserDTO  implements Serializable {
    * @return id
   **/
   @ApiModelProperty(value = "")
-
-
-  public Long getId() {
+  
+    public Long getId() {
     return id;
   }
 
@@ -72,9 +70,8 @@ public class UserDTO  implements Serializable {
    * @return username
   **/
   @ApiModelProperty(value = "")
-
-
-  public String getUsername() {
+  
+    public String getUsername() {
     return username;
   }
 
@@ -92,9 +89,8 @@ public class UserDTO  implements Serializable {
    * @return firstName
   **/
   @ApiModelProperty(value = "")
-
-
-  public String getFirstName() {
+  
+    public String getFirstName() {
     return firstName;
   }
 
@@ -112,9 +108,8 @@ public class UserDTO  implements Serializable {
    * @return lastName
   **/
   @ApiModelProperty(value = "")
-
-
-  public String getLastName() {
+  
+    public String getLastName() {
     return lastName;
   }
 
@@ -132,9 +127,8 @@ public class UserDTO  implements Serializable {
    * @return email
   **/
   @ApiModelProperty(value = "")
-
-
-  public String getEmail() {
+  
+    public String getEmail() {
     return email;
   }
 
@@ -152,9 +146,8 @@ public class UserDTO  implements Serializable {
    * @return password
   **/
   @ApiModelProperty(value = "")
-
-
-  public String getPassword() {
+  
+    public String getPassword() {
     return password;
   }
 
@@ -172,9 +165,8 @@ public class UserDTO  implements Serializable {
    * @return phone
   **/
   @ApiModelProperty(value = "")
-
-
-  public String getPhone() {
+  
+    public String getPhone() {
     return phone;
   }
 
@@ -192,9 +184,8 @@ public class UserDTO  implements Serializable {
    * @return userStatus
   **/
   @ApiModelProperty(value = "User Status")
-
-
-  public Integer getUserStatus() {
+  
+    public Integer getUserStatus() {
     return userStatus;
   }
 
@@ -255,4 +246,3 @@ public class UserDTO  implements Serializable {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

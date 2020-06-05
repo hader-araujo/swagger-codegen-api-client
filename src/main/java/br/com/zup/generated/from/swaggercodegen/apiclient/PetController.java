@@ -17,9 +17,9 @@ public class PetController {
         this.petApi = petApi;
     }
 
-    @GetMapping(value = "/findByStatus/{status}")
+    @GetMapping(value = "/findByStatus")
     @ResponseBody
-    public ResponseEntity<List<PetDTO>> findByStatus(@PathVariable("status") List<String> status) {
+    public ResponseEntity<List<PetDTO>> findByStatus(@RequestParam("status") List<String> status) {
         return this.petApi.findPetsByStatus(status);
     }
 }

@@ -14,8 +14,7 @@ import javax.validation.constraints.*;
  * TagDTO
  */
 @Validated
-
-public class TagDTO  implements Serializable {
+public class TagDTO  implements Serializable  {
   private static final long serialVersionUID = 1L;
 
   @JsonProperty("id")
@@ -34,9 +33,8 @@ public class TagDTO  implements Serializable {
    * @return id
   **/
   @ApiModelProperty(value = "")
-
-
-  public Long getId() {
+  
+    public Long getId() {
     return id;
   }
 
@@ -54,9 +52,8 @@ public class TagDTO  implements Serializable {
    * @return name
   **/
   @ApiModelProperty(value = "")
-
-
-  public String getName() {
+  
+    public String getName() {
     return name;
   }
 
@@ -105,4 +102,3 @@ public class TagDTO  implements Serializable {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

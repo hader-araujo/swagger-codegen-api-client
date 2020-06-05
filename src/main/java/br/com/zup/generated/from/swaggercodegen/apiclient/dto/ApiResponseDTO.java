@@ -14,8 +14,7 @@ import javax.validation.constraints.*;
  * ApiResponseDTO
  */
 @Validated
-
-public class ApiResponseDTO  implements Serializable {
+public class ApiResponseDTO  implements Serializable  {
   private static final long serialVersionUID = 1L;
 
   @JsonProperty("code")
@@ -37,9 +36,8 @@ public class ApiResponseDTO  implements Serializable {
    * @return code
   **/
   @ApiModelProperty(value = "")
-
-
-  public Integer getCode() {
+  
+    public Integer getCode() {
     return code;
   }
 
@@ -57,9 +55,8 @@ public class ApiResponseDTO  implements Serializable {
    * @return type
   **/
   @ApiModelProperty(value = "")
-
-
-  public String getType() {
+  
+    public String getType() {
     return type;
   }
 
@@ -77,9 +74,8 @@ public class ApiResponseDTO  implements Serializable {
    * @return message
   **/
   @ApiModelProperty(value = "")
-
-
-  public String getMessage() {
+  
+    public String getMessage() {
     return message;
   }
 
@@ -130,4 +126,3 @@ public class ApiResponseDTO  implements Serializable {
     return o.toString().replace("\n", "\n    ");
   }
 }
-

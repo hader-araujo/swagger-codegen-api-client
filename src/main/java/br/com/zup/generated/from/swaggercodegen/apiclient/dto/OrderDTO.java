@@ -16,8 +16,7 @@ import javax.validation.constraints.*;
  * OrderDTO
  */
 @Validated
-
-public class OrderDTO  implements Serializable {
+public class OrderDTO  implements Serializable  {
   private static final long serialVersionUID = 1L;
 
   @JsonProperty("id")
@@ -64,7 +63,6 @@ public class OrderDTO  implements Serializable {
       return null;
     }
   }
-
   @JsonProperty("status")
   private StatusEnum status = null;
 
@@ -81,9 +79,8 @@ public class OrderDTO  implements Serializable {
    * @return id
   **/
   @ApiModelProperty(value = "")
-
-
-  public Long getId() {
+  
+    public Long getId() {
     return id;
   }
 
@@ -101,9 +98,8 @@ public class OrderDTO  implements Serializable {
    * @return petId
   **/
   @ApiModelProperty(value = "")
-
-
-  public Long getPetId() {
+  
+    public Long getPetId() {
     return petId;
   }
 
@@ -121,9 +117,8 @@ public class OrderDTO  implements Serializable {
    * @return quantity
   **/
   @ApiModelProperty(value = "")
-
-
-  public Integer getQuantity() {
+  
+    public Integer getQuantity() {
     return quantity;
   }
 
@@ -141,10 +136,9 @@ public class OrderDTO  implements Serializable {
    * @return shipDate
   **/
   @ApiModelProperty(value = "")
-
-  @Valid
-
-  public OffsetDateTime getShipDate() {
+  
+    @Valid
+    public OffsetDateTime getShipDate() {
     return shipDate;
   }
 
@@ -162,9 +156,8 @@ public class OrderDTO  implements Serializable {
    * @return status
   **/
   @ApiModelProperty(value = "Order Status")
-
-
-  public StatusEnum getStatus() {
+  
+    public StatusEnum getStatus() {
     return status;
   }
 
@@ -182,9 +175,8 @@ public class OrderDTO  implements Serializable {
    * @return complete
   **/
   @ApiModelProperty(value = "")
-
-
-  public Boolean isComplete() {
+  
+    public Boolean isComplete() {
     return complete;
   }
 
@@ -241,4 +233,3 @@ public class OrderDTO  implements Serializable {
     return o.toString().replace("\n", "\n    ");
   }
 }
-
