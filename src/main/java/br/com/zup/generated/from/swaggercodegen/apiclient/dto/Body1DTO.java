@@ -14,6 +14,8 @@ import javax.validation.constraints.*;
  * Body1DTO
  */
 @Validated
+
+
 public class Body1DTO  implements Serializable  {
   private static final long serialVersionUID = 1L;
 

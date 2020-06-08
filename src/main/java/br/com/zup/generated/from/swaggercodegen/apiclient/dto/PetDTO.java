@@ -19,6 +19,8 @@ import javax.validation.constraints.*;
  * PetDTO
  */
 @Validated
+
+
 public class PetDTO  implements Serializable  {
   private static final long serialVersionUID = 1L;
 
@@ -33,7 +35,7 @@ public class PetDTO  implements Serializable  {
 
   @JsonProperty("photoUrls")
   @Valid
-  private List<String> photoUrls = new ArrayList<String>();
+  private List<String> photoUrls = new ArrayList<>();
 
   @JsonProperty("tags")
   @Valid
@@ -165,7 +167,7 @@ public class PetDTO  implements Serializable  {
 
   public PetDTO addTagsItem(TagDTO tagsItem) {
     if (this.tags == null) {
-      this.tags = new ArrayList<TagDTO>();
+      this.tags = new ArrayList<>();
     }
     this.tags.add(tagsItem);
     return this;

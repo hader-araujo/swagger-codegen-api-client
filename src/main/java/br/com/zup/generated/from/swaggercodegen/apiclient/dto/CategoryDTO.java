@@ -14,6 +14,8 @@ import javax.validation.constraints.*;
  * CategoryDTO
  */
 @Validated
+
+
 public class CategoryDTO  implements Serializable  {
   private static final long serialVersionUID = 1L;
 

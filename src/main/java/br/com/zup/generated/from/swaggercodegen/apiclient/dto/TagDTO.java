@@ -14,6 +14,8 @@ import javax.validation.constraints.*;
  * TagDTO
  */
 @Validated
+
+
 public class TagDTO  implements Serializable  {
   private static final long serialVersionUID = 1L;
 

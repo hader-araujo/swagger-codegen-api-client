@@ -14,6 +14,8 @@ import javax.validation.constraints.*;
  * UserDTO
  */
 @Validated
+
+
 public class UserDTO  implements Serializable  {
   private static final long serialVersionUID = 1L;
 

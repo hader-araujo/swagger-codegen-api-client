@@ -14,6 +14,8 @@ import javax.validation.constraints.*;
  * ApiResponseDTO
  */
 @Validated
+
+
 public class ApiResponseDTO  implements Serializable  {
   private static final long serialVersionUID = 1L;
 
